@@ -30,11 +30,6 @@ const questions = [
       message: "What is your project's title?",
       name: "title"
     },{
-    type: "list",
-    message: "What Sections do you require for your readme?",
-    name: "contents",
-    choices: ["Description","Technologies","Links","Installation","WireFraming","Development","Usage","Screenshots","Tests","Evolution","Credits","References","Collaboration","Licence"]
-    },{
       type: "input",
       message: "What is your project's description?",
       name: "description"
