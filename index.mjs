@@ -209,7 +209,7 @@ const questions = [
    *### Wire Framing Image
    ${data.wireFramingImg}
 
-   ## User Story
+   ## UserStory
 
    ${data.userStory}
 
