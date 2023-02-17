@@ -6,7 +6,6 @@
    * [Technologies](#technologies)
    * [Links](#links)
    * [Installation](#installation)
-   * [WireFraming](#wireframing)
    * [UserStory](#userstory)
    * [Development](#development)
    * [Usage](#usage)
