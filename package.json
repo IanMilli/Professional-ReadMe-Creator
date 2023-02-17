@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/IanMilli/Professional-ReadMe-Creator/issues"
   },
-  "homepage": "https://github.com/IanMilli/Professional-ReadMe-Creator#readme"
+  "homepage": "https://github.com/IanMilli/Professional-ReadMe-Creator#readme",
+  "dependencies": {
+    "inquirer": "^9.1.4"
+  }
 }
