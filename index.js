@@ -46,40 +46,49 @@ const questions = [
       type: "input",
       message: "What are the links for your projects repository and deployed application?",
       name: "links"
-    },
-    {
+    },{
       type: "input",
       message: "What are your project's installation instructions?",
       name: "installation",
       default: "npm i"
-    },
-    {
+    },{
       type: "input",
-      message: "What commands should be run to run tests?",
-      name: "tests",
-      default: "npm run test"
-    },
-    {
+      message: "What are the img links for any wire framing you carried out for this project",
+      name: "wireFraming",
+    },{
       type: "input",
-      message: "Who needs credit on this project?",
-      name: "credits"
-    },
-    {
+      message: "What is the user story for this project and how was it developed?",
+      name: "development"
+    },{
       type: "input",
-      message: "How does someone contribute to this project?",
-      name: "contribute"
-    },
-    {
+      message: "How does the user use this project?",
+      name: "usage"
+    },{
       type: "input",
-      message: "What is your email?",
-      name: "email"
-    },
-    {
-      type: "input",
-      message: "What is your GitHub username?",
-      name: "github"
-    },
-    {
+      message: "Do you have any screenshots to add to the readme file?",
+      name: "screenshots"
+    },{
+        type: "input",
+        message: "What commands should be run to run tests?",
+        name: "tests",
+        default: "npm run test"
+      },{
+        type: "input",
+        message: "How could this project be evolved next?",
+        name: "evolution"
+      },{
+        type: "input",
+        message: "Names of project Authors and contact details?",
+        name: "credits"
+    },{
+        type: "input",
+        message: "What reference materials were used in the creation of this project?",
+        name: "references"
+    },{
+        type: "input",
+        message: "if this was a collaborated project with multiple authors, what was the collaboration agreement used",
+        name: "collaboration"  
+    },{
       type: "list",
       message: "How is this project licensed?",
       name: "license",
