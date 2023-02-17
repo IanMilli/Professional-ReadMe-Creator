@@ -6,6 +6,8 @@
    * [Technologies](#technologies)
    * [Links](#links)
    * [Installation](#installation)
+   * [WireFraming](#wireframing)
+   * [UserStory](#userstory)
    * [Development](#development)
    * [Usage](#usage)
    * [Screenshots](#screenshots)
@@ -15,7 +17,6 @@
    * [References](references)
    * [Collaboration](#collaboration)
    * [License](#license)
-   * 
    
    ## Description
 
@@ -23,7 +24,7 @@
 
    ## Technologies Used
 
-   JavaScript, Node JS
+   ES6, Node JS
 
    ## Links
 
@@ -35,12 +36,17 @@
 
    Download the code located in the applications repository by cloning it to a local computer. Use a program like vscode to run an integrated terminal by right clicking on the index.mjs file and selecting "Open in integrated Terminal". Then type in "node index.mjs" and follow the prompts that will appear in the command line.
 
-   ## Development
+   ## UserStory
+   AS A developer, I WANT a README generator, SO THAT I can quickly create a professional README for a new project
 
+   ## Development
+    
+    I initiated a repository on GitHub and then cloned it to my local machine where i created the basic file structure for the application. I then opened an integrated terminal and used init npm-y to initiate my json package and also initiated the node download separately. Once this was done i wrote the code for the function to generate the readme file before adding in an array of questions for a user to consider to design the parameters of their readme file. Finally i ran several tests that helped me debug any syntax errors.
 
 
    ## Usage
-
+  
+  This application can be used to generate a professional readme file that can be edited for styling and have screenshots added to it once it is uploaded to git hub for any project by following the instructions in [Installation](#installation).
  
 
    ## Screenshots

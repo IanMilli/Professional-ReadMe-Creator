@@ -25,7 +25,7 @@ License = license used for the application
 
 /**create an array of questions for the user to respond to */
 const questions = [
-    {
+ {
       type: "input",
       message: "What is your project's title?",
       name: "title",
@@ -69,8 +69,18 @@ const questions = [
     },{
       type: "input",
       message: "What is the user story for this project and how was it developed?",
-      name: "user",
+      name: "userStory",
       default: "user story for project"
+    },{
+      type: "input",
+      message: "How was the project developed?",
+      name: "development",
+      default: "how was the application developed"
+    },{
+      type: "input",
+      message: "How should the user interact with this project?",
+      name: "usage",
+      default: "How do you use the application?"
     },{
       type: "list",
       message: "Do you have any screenshots to add to the readme file?",
@@ -162,6 +172,7 @@ const questions = [
    * [Links](#links)
    * [Installation](#installation)
    * [WireFraming](#wireframing)
+   * [UserStory](#userstory)
    * [Development](#development)
    * [Usage](#usage)
    * [Screenshots](#screenshots)
@@ -171,13 +182,13 @@ const questions = [
    * [References](references)
    * [Collaboration](#collaboration)
    * [License](#license)
-   * 
+   
    
    ## Description
 
    ${data.description}
 
-   ## Technologies Used
+   ## Technologies
 
    ${data.technologies}
 
@@ -187,7 +198,7 @@ const questions = [
    
    ### Link for [Repository For Deployed Application](${data.linkAppRepository})
    
-   ## Installation Instructions
+   ## Installation 
 
    ${data.installation}
 
@@ -195,8 +206,12 @@ const questions = [
 
    ${data.wireFramingDescription}
 
-   *Wire Framing Image
+   *### Wire Framing Image
    ${data.wireFramingImg}
+
+   ## User Story
+
+   ${data.userStory}
 
    ## Development
 
@@ -220,12 +235,12 @@ const questions = [
 
    ## Credits
 
-   *${data.credits}
-   *${data.email}
-   *${data.githubUserName}
+   * Main Author:                   ${data.credits}
+   * Main Author Email:             ${data.email}
+   * Main Author GitHub User Name:  ${data.githubUserName}
 
    ## Collaborators
-   *${data.collaboratorNames}
+   ${data.collaboratorNames}
 
    ##References
 
@@ -253,7 +268,7 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then(response => {
-        writeToFile("testREADME.md", generateMarkdown(response))
+        writeToFile("GeneratedREADME.md", generateMarkdown(response))
 });
 }
 
