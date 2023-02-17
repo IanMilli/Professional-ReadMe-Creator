@@ -75,8 +75,11 @@
    ## Screenshots
 
    Gif Demonstrating use of the application:
-
+[gif 1](https://github.com/IanMilli/Professional-ReadMe-Creator/blob/main/images%20and%20gif/Untitled_%20Feb%2017%2C%202023%208_09%20PM.gif)
    Screenshots demonstrating use of the application
+![screenshot 1](https://user-images.githubusercontent.com/120601739/219795590-613566e9-4499-441a-a3fe-a721a3f6b521.png)
+![screenshot 2](https://user-images.githubusercontent.com/120601739/219795612-908eb942-bb79-45d3-8d89-3d910a507dfb.png)
+![screenshot 3](https://user-images.githubusercontent.com/120601739/219795635-502573ea-886c-492b-86ed-dc756212c2d7.png)
 
    For a video demonstrating use of the application please refer to [Links](#links)
 
