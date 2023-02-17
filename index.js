@@ -2,6 +2,7 @@
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
+/**links to js file located in the utility folder that has the barebones skeleton for a readme file that aligns with the below question array */
 const generateMarkdown = require("./utils/generateMarkdown");
 
 /**sections required to be created for a Professional ReadMe File 
