@@ -179,8 +179,8 @@ const questions = [
    * [Tests](#tests)
    * [Evolution](#evolution)
    * [Credits](#credits)
-   * [References](references)
-   * [Collaboration](#collaboration)
+   * [References](#references)
+   * [Contributing](#contributing)
    * [License](#license)
    
    
@@ -239,10 +239,10 @@ const questions = [
    * Main Author Email:             ${data.email}
    * Main Author GitHub User Name:  ${data.githubUserName}
 
-   ## Collaborators
+   ## Contributing
    ${data.collaboratorNames}
 
-   ##References
+   ## References
 
    ${data.references}
 
