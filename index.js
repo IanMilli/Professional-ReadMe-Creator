@@ -73,9 +73,17 @@ const questions = [
         name: "evolution"
       },{
         type: "input",
-        message: "Names of project Authors and contact details?",
+        message: "Names of project Authors ?",
         name: "credits"
     },{
+        type: "input",
+        message: "What is your email?",
+        name: "email"
+      },{
+        type: "input",
+        message: "What is your GitHub username?",
+        name: "github"
+      },{
         type: "input",
         message: "What reference materials were used in the creation of this project?",
         name: "references"
