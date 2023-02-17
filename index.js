@@ -35,26 +35,23 @@ const questions = [
     name: "contents",
     choices: ["Description","Technologies","Links","Installation","WireFraming","Development","Usage","Screenshots","Tests","Evolution","Credits","References","Collaboration","Licence"]
     },{
-
       type: "input",
       message: "What is your project's description?",
       name: "description"
+    },{
+      type: "input",
+      message: "What are the technologies used to create your project?",
+      name: "technologies",
+    },{
+      type: "input",
+      message: "What are the links for your projects repository and deployed application?",
+      name: "links"
     },
     {
       type: "input",
       message: "What are your project's installation instructions?",
-      name: "install",
+      name: "installation",
       default: "npm i"
-    },
-    {
-      type: "input",
-      message: "What is your project's intended usage?",
-      name: "usage"
-    },
-    {
-      type: "input",
-      message: "What technologies did your project use?",
-      name: "tech"
     },
     {
       type: "input",
