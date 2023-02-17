@@ -25,77 +25,119 @@ License = license used for the application
 
 /**create an array of questions for the user to respond to */
 const questions = [
-    {
+ {
       type: "input",
       message: "What is your project's title?",
-      name: "title"
+      name: "title",
+      default: "Title of Project"
     },{
       type: "input",
       message: "What is your project's description?",
-      name: "description"
+      name: "description",
+      default: "Description of Project"
     },{
       type: "input",
       message: "What are the technologies used to create your project?",
       name: "technologies",
+      default: "Technologies used such as HTML, CSS, JavaScript, Node etc ....."
     },{
       type: "input",
-      message: "What are the links for your projects repository and deployed application?",
-      name: "links"
+      message: "What are the links for deployed project?",
+      name: "linkDeployedApp",
+      default: "Links for Deployed App"
+    },{
+      type: "input",
+      message: "What are the links for your projects repository?",
+      name: "linkAppRepository",
+      default: "Links for the Project Repository"
     },{
       type: "input",
       message: "What are your project's installation instructions?",
       name: "installation",
-      default: "npm i"
+      default: "node index.mjs"
     },{
       type: "input",
-      message: "What are the img links for any wire framing you carried out for this project",
-      name: "wireFraming",
+      message: "What is the description for any wire framing you carried out for this project",
+      name: "wireFramingDescription",
+      default: "wire framing description"
+    },{
+      type: "list",
+      message: "Do you have any wire framing images to add to the readme file?",
+      choices: ["yes this is a placeholder for a wire framing image ","No delete this section"],
+      name: "wireFramingImg",
+      default: "placeholder for wire framing images to be added via github repository"
     },{
       type: "input",
       message: "What is the user story for this project and how was it developed?",
-      name: "development"
+      name: "userStory",
+      default: "user story for project"
     },{
       type: "input",
-      message: "How does the user use this project?",
-      name: "usage"
+      message: "How was the project developed?",
+      name: "development",
+      default: "how was the application developed"
     },{
       type: "input",
+      message: "How should the user interact with this project?",
+      name: "usage",
+      default: "How do you use the application?"
+    },{
+      type: "list",
       message: "Do you have any screenshots to add to the readme file?",
-      name: "screenshots"
+      choices: ["yes, this is a placeholder for screenshots to be added","No, delete this section"],
+      name: "screenshots",
+      default: "placeholder for screenshots to be added via github repository"
     },{
         type: "input",
         message: "What commands should be run to run tests?",
         name: "tests",
-        default: "npm run test"
+        default: "node index.mjs"
       },{
         type: "input",
         message: "How could this project be evolved next?",
-        name: "evolution"
+        name: "evolution",
+        default: "description of how this project could be developed further"
       },{
         type: "input",
         message: "Names of project Authors ?",
-        name: "credits"
+        name: "credits",
+        default: "name of the main project author"
     },{
         type: "input",
-        message: "What is your email?",
-        name: "email"
+        message: "What is the email of the Main Author?",
+        name: "email",
+        default: "example = author1@email.com"
       },{
         type: "input",
-        message: "What is your GitHub username?",
-        name: "github"
+        message: "What is the GitHub username of the Main Author?",
+        name: "githubUserName",
+        default: "example = GitHub user name"
+      },{
+        type: "input",
+        message: "What is the GitHub repository link of the main Author?",
+        name: "githubRepoMain",
+        default: "Author/s Main GitHub Repository Link"
       },{
         type: "input",
         message: "What reference materials were used in the creation of this project?",
-        name: "references"
+        name: "references",
+        default: "research materials used"
     },{
+      type: "input",
+      message: "names of other collaborators",
+      name: "collaboratorNames",
+      default: "add names of other collaborators"
+  },{
         type: "input",
         message: "if this was a collaborated project with multiple authors, what was the collaboration agreement used",
-        name: "collaboration"  
+        name: "collaboration",
+        default: "add text for collaboration agreement"
     },{
       type: "list",
       message: "How is this project licensed?",
       name: "license",
-      choices: ["Apache", "Boost Software", "Creative Commons", "GNU", "ISC", "MIT", "Mozilla Public", "The Unlicense", "Other"]
+      choices: ["Apache", "Boost Software", "Creative Commons", "GNU", "ISC", "MIT", "Mozilla Public", "The Unlicense", "Other"],
+      default: "project license"
     }
   ]
 
@@ -124,50 +166,96 @@ const questions = [
    return `# ${data.title}
  
    ## Table of Contents
+
    * [Description](#description)
    * [Technologies](#technologies)
    * [Links](#links)
    * [Installation](#installation)
    * [WireFraming](#wireframing)
+   * [UserStory](#userstory)
    * [Development](#development)
    * [Usage](#usage)
    * [Screenshots](#screenshots)
    * [Tests](#tests)
    * [Evolution](#evolution)
    * [Credits](#credits)
-   * [References](references)
-   * [Collaboration](#collaboration)
+   * [References](#references)
+   * [Contributing](#contributing)
    * [License](#license)
-   * 
+   
+   
    ## Description
+
    ${data.description}
-   ## Technologies Used
+
+   ## Technologies
+
    ${data.technologies}
+
    ## Links
-   ${data.links}
-   ## Installation Instructions
+
+   ### Link for [Deployed Application](${data.linkDeployedApp})
+   
+   ### Link for [Repository For Deployed Application](${data.linkAppRepository})
+   
+   ## Installation 
+
    ${data.installation}
+
    ## WireFraming
-   ${data.wireFraming}
+
+   ${data.wireFramingDescription}
+
+   *### Wire Framing Image
+   ${data.wireFramingImg}
+
+   ## User Story
+
+   ${data.userStory}
+
    ## Development
+
    ${data.development}
+
    ## Usage
+
    ${data.usage}
+
    ## Screenshots
+
    ${data.screenshots}
+
    ## Tests
+
    ${data.tests}
+
    ## Evolution
+
    ${data.evolution}
+
    ## Credits
-   ${data.credits}
-   ##References
-   ${data.refernces}
+
+   * Main Author:                   ${data.credits}
+   * Main Author Email:             ${data.email}
+   * Main Author GitHub User Name:  ${data.githubUserName}
+
+   ## Contributing
+   ${data.collaboratorNames}
+
+   ## References
+
+   ${data.references}
+
    ## Collaboration
+
    ${data.collaboration}
+
    ## Questions
-   If you have further questions, you can reach me at ${data.email}. For more of my work, see [my GitHub](https://github.com/${data.github}).
+
+   If you have further questions, you can reach me at ${data.email}. For more of my work, see [my GitHub](https://github.com/${data.githubRepoMain}).
+  
    ## License
+
    ![License badge](https://img.shields.io/badge/license-${data.license}-brightgreen).
  `;
  }
@@ -180,7 +268,7 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then(response => {
-        writeToFile("sampleREADME.md", generateMarkdown(response))
+        writeToFile("GeneratedREADME.md", generateMarkdown(response))
 });
 }
 
