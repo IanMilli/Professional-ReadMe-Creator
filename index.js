@@ -96,13 +96,15 @@ const questions = [
     }
   ]
 
-// function to write README file
+/* function to write README file*/
 function writeToFile(fileName, data) {
-}
+    return fs.writeFileSync(path.join(process.cwd(), filename), data);}
 
 // function to initialize program
 function init() {
-
+    inquirer.prompt(questions).then(response => {
+        writeToFile("sampleREADME.md", generateMarkdown(response))
+});
 }
 
 // function call to initialize program
